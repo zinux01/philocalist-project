@@ -29,6 +29,20 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        .camera {
+            width: 700px;
+            height: 400px;
+            border: 2px solid black;
+            position: relative;
+        }
+     
+        video {
+            width: 700px;
+            height: 400px;
+            object-fit: cover;
+        }
+    </style>
 </head>
 
 <body>
@@ -44,6 +58,7 @@
             <div class="navbar-nav ms-auto py-0">
                 <a href="index.html" class="nav-item nav-link active">Home</a>
                 <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#camera" class="nav-item nav-link">Camera</a>
                 <a href="#members" class="nav-item nav-link">Members</a>
             </div>
         </div>
@@ -138,13 +153,30 @@
         </div>
     </div>
     <!-- About End -->
-    
 
+     <!-- Camera -->
+     <div class="container-fluid py-5 wow fadeInUp" id="camera" data-wow-delay="0.1s"></div>
+     <div class="container">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <h5 class="text-primary text-uppercase" style="letter-spacing: 5px;">Trial our prototipe</h5>
+            <h1 class="display-5 mb-0">Camera</h1>
+        </div>
+    <div class="d-flex flex-column align-items-center"> 
+        <div id="camera">
+            <video id="vid"></video>
+        </div>
+     <br />
+        <button id="but" autoplay>
+        Open WebCam
+    </button>
+    </div>
+    <!-- Camera -->
+    
     <!-- Team Start -->
     <div class="container-fluid py-5 wow fadeInUp" id="members" data-wow-delay="0.1s">
         <div class="container">
             <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-                <h5 class="text-primary text-uppercase" style="letter-spacing: 5px;">Our Teams</h5>
+                <h5 class="text-primary text-uppercase" style="letter-spacing: 5px;">Present</h5>
                 <h1 class="display-5 mb-0">Our Professional Teams</h1>
             </div>
             <div class="owl-carousel testimonial-carousel">
@@ -407,6 +439,32 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            let but = document.getElementById("but");
+            let video = document.getElementById("vid");
+            let mediaDevices = navigator.mediaDevices;
+            vid.muted = true;
+            but.addEventListener("click", () => {
+     
+                // Accessing the user camera and video.
+                mediaDevices
+                    .getUserMedia({
+                        video: true,
+                        audio: true,
+                    })
+                    .then((stream) => {
+     
+                        // Changing the source of video to current stream.
+                        video.srcObject = stream;
+                        video.addEventListener("loadedmetadata", () => {
+                            video.play();
+                        });
+                    })
+                    .catch(alert);
+            });
+        });
+    </script>
 </body>
 
 </html>
