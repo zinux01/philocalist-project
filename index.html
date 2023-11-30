@@ -42,6 +42,14 @@
             height: 400px;
             object-fit: cover;
         }
+
+        .img-custom-size {
+            width: 300px; /* Gantilah dengan lebar yang diinginkan */
+            height: 650px; /* Gantilah dengan tinggi yang diinginkan */
+            object-fit: cover;
+            border-radius: 10px; /* Gantilah dengan border-radius yang diinginkan */
+        }
+        
     </style>
 </head>
 
@@ -132,7 +140,7 @@
                         <h5 class="text-primary text-uppercase" style="letter-spacing: 5px;">About Us</h5>
                         <h1 class="display-5 mb-0">CCTV keamanan untuk tindak kejahatan</h1>
                     </div>
-                    <h4 class="text-body fst-italic mb-4">Keamanan publik adalah salah satu aspek yang sangat penting dalam menjaga ketertiban masyarakat dan melindungi individu serta properti mereka. Dalam era yang semakin kompleks ini, tantangan terhadap keamanan publik semakin beragam, termasuk ancaman kejahatan, tindakan kriminal, dan situasi darurat yang dapat timbul secara tiba-tiba. Oleh karena itu, pengembangan teknologi yang dapat membantu mendeteksi tindak kejahatan secara dini dan memberikan notifikasi darurat yang cepat telah menjadi sangat penting.</h4>
+                    <h4 class="text-body mb-4">Keamanan publik adalah salah satu aspek yang sangat penting dalam menjaga ketertiban masyarakat dan melindungi individu serta properti mereka. Dalam era yang semakin kompleks ini, tantangan terhadap keamanan publik semakin beragam, termasuk ancaman kejahatan, tindakan kriminal, dan situasi darurat yang dapat timbul secara tiba-tiba. Oleh karena itu, pengembangan teknologi yang dapat membantu mendeteksi tindak kejahatan secara dini dan memberikan notifikasi darurat yang cepat telah menjadi sangat penting.</h4>
                     <p class="mb-4">Salah satu solusi yang berkembang pesat dalam menjawab tantangan ini adalah penggunaan Sensor Keamanan Pendeteksi Tindak Kejahatan dan Notifikasi Darurat. Teknologi ini menggabungkan sensor canggih, analisis data, dan kemampuan notifikasi otomatis untuk meningkatkan kemampuan pengawasan keamanan di berbagai lingkungan, mulai dari pusat perbelanjaan hingga perkantoran, sekolah, dan tempat-tempat umum lainnya. Sensor keamanan ini memiliki peran penting dalam meningkatkan respons terhadap ancaman keamanan, mencegah tindakan kriminal, dan memberikan perlindungan lebih baik bagi masyarakat.</p>
                     <div class="row g-3">
                         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.6s">
@@ -166,8 +174,7 @@
             <video id="vid"></video>
         </div>
      <br />
-        <button id="but" autoplay> Open WebCam</button>
-        <button id="stop" autoplay> Close WebCam</button>
+        <button id="but" autoplay id="stop"> On/Off WebCam</button>
     </div>
     </div>
     <!-- Camera -->
@@ -182,13 +189,10 @@
             <div class="owl-carousel testimonial-carousel">
                 <div class="wow slideInUp" data-wow-delay="0.3s">
                     <div class="position-relative rounded-top">
-                        <div class=""></div>
-                        <img class="img-fluid rounded-top w-100 object-fit-cover h-25" src="img/Daffa.jpg" alt="">
+                        <img class="img-fluid rounded-top w-100 object-fit-cover img-custom-size" src="img/Daffa.jpg" alt="">
                         <div class="position-absolute bottom-0 end-0 d-flex flex-column bg-white p-1" style="margin-right: -25px;">
-                            <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
-                            <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
-                            <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                            <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                            <a class="btn btn-outline-secondary btn-square m-1" href="https://www.linkedin.com/in/moch-daffa-ryandhana-433081219"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                            <a class="btn btn-outline-secondary btn-square m-1" href="https://www.instagram.com/ryandhanaaa/"><i class="fab fa-instagram fw-normal"></i></a>
                         </div>
                     </div>
                     <div class="bg-primary text-center rounded-bottom p-4">
@@ -198,12 +202,10 @@
                 </div>
                 <div class="wow slideInUp" data-wow-delay="0.6s">
                     <div class="position-relative rounded-top">
-                        <img class="img-fluid rounded-top w-100" src="img/Defi.jpg" alt="">
+                        <img class="img-fluid rounded-top w-100 object-fit-cover img-custom-size" src="img/Defi.jpg" alt="">
                         <div class="position-absolute bottom-0 end-0 d-flex flex-column bg-white p-1" style="margin-right: -25px;">
-                            <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
-                            <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
-                            <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                            <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                            <a class="btn btn-outline-secondary btn-square m-1" href="https://www.instagram.com/defi_afrilia/"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                            <a class="btn btn-outline-secondary btn-square m-1" href="https://www.linkedin.com/in/defi-afrilia-b19b7b280"><i class="fab fa-instagram fw-normal"></i></a>
                         </div>
                     </div>
                     <div class="bg-primary text-center rounded-bottom p-4">
@@ -213,10 +215,8 @@
                 </div>
                 <div class="wow slideInUp" data-wow-delay="0.9s">
                     <div class="position-relative rounded-top">
-                        <img class="img-fluid rounded-top w-100" src="img/brian.jpg" alt="">
+                        <img class="img-fluid rounded-top w-100 object-fit-cover img-custom-size" src="img/brian.jpg" alt="">
                         <div class="position-absolute bottom-0 end-0 d-flex flex-column bg-white p-1" style="margin-right: -25px;">
-                            <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
-                            <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
                             <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
                             <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-instagram fw-normal"></i></a>
                         </div>
@@ -228,12 +228,10 @@
                 </div>
                 <div class="wow slideInUp" data-wow-delay="0.3s">
                     <div class="position-relative rounded-top">
-                        <img class="img-fluid rounded-top w-100 object-fit-cover h-25" src="img/linda.jpg" alt="">
+                        <img class="img-fluid rounded-top w-100 object-fit-cover img-custom-size" src="img/linda.jpg" alt="">
                         <div class="position-absolute bottom-0 end-0 d-flex flex-column bg-white p-1" style="margin-right: -25px;">
-                            <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
-                            <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
                             <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                            <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                            <a class="btn btn-outline-secondary btn-square m-1" href="https://instagram.com/_rialndwt?igshid=NGVhN2U2NjQ0Yg"><i class="fab fa-instagram fw-normal"></i></a>
                         </div>
                     </div>
                     <div class="bg-primary text-center rounded-bottom p-4">
@@ -243,10 +241,8 @@
                 </div>      
                 <div class="wow slideInUp" data-wow-delay="0.9s">
                     <div class="position-relative rounded-top">
-                        <img class="img-fluid rounded-top w-100" src="img/alkan.jpg" alt="">
+                        <img class="img-fluid rounded-top w-100 object-fit-cover img-custom-size" src="img/alkan.jpg" alt="">
                         <div class="position-absolute bottom-0 end-0 d-flex flex-column bg-white p-1" style="margin-right: -25px;">
-                            <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
-                            <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
                             <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
                             <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-instagram fw-normal"></i></a>
                         </div>
@@ -268,42 +264,42 @@
         <div class="container">
             <div class="text-center mx-auto mb-5" style="max-width: 600px;">
                 <h5 class="text-primary text-uppercase" style="letter-spacing: 5px;">Testimoni</h5>
-                <h1 class="display-5 mb-0">What People Say About Our Services</h1>
+                <h1 class="display-5 mb-0">Ini Kata Mereka</h1>
             </div>
             <div class="owl-carousel testimonial-carousel">
                 <div class="text-center pb-4">
-                    <img class="img-fluid object-fit-cover mx-auto rounded-circle" src="https://images.pexels.com/photos/2876486/pexels-photo-2876486.png?auto=compress&cs=tinysrgb&dpr=1&w=500" style="width: 100px; height: 100px;" >
+                    <img class="img-fluid object-fit-cover mx-auto rounded-circle" src="img/testimonial-1.jpg" style="width: 100px; height: 100px;" >
                     <div class="testimonial-text bg-light rounded p-4 mt-n5">
-                        <p class="mt-5">saat aku sedang mencuci lamborghiniku, ada 2 pria yang menodong saya menggunakan parang, lalu berkat cctv ini saya selamat. terima kasih
+                        <p class="mt-5">pada saat saya sedang mencuci mobil, terdapat 2 orang menodongkan parang ke arah saya, lalu berkat cctv ini saya selamat karna polisi dapat ke lokasi dengan cepat. terima kasih 
                         </p>
-                        <h4 class="text-truncate">Bambang wiryanto</h4>
+                        <h4 class="text-truncate">darto</h4>
                         <i>Trader Binomo</i>
                     </div>
                 </div>
                 <div class="text-center">
-                    <img class="img-fluid mx-auto rounded-circle" src="https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/p1/183/2023/10/21/Doona-2261123727.jpg" style="width: 100px; height: 100px;" >
+                    <img class="img-fluid mx-auto rounded-circle" src="img/testimonial-2.jpg" style="width: 100px; height: 100px;" >
                     <div class="testimonial-text bg-light rounded p-4 mt-n5">
-                        <p class="mt-5">saat saya sedang di jalan mau pulang, saya di todong pisau oleh orang lalu saya melihat ke arah CCTV yang sudah di pasangkan prototipe ini, lalu mereka segera pergi
+                        <p class="mt-5">saat saya sedang di jalan mau pulang, saya di todong pistol oleh orang lalu saya melihat ke arah CCTV yang sudah di pasangkan prototipe ini, lalu mereka segera pergi
                         </p>
-                        <h4 class="text-truncate">suzy susanti</h4>
+                        <h4 class="text-truncate">Siti</h4>
                         <i>Artis</i>
                     </div>
                 </div>
                 <div class="text-center">
-                    <img class="img-fluid mx-auto rounded-circle" src="https://qph.cf2.quoracdn.net/main-qimg-0d72451d28f24c20f9e653e525d4cfdb-lq" style="width: 100px; height: 100px;" >
+                    <img class="img-fluid mx-auto rounded-circle" src="img/testimonial-4.jpg" style="width: 100px; height: 100px;" >
                     <div class="testimonial-text bg-light rounded p-4 mt-n5">
-                        <p class="mt-5">saat saya sedang keluar untuk beli makan di warung, ada sekelompok pria yang menodongkan senjata ke pemilik warung, lalu pria tersebut melihat CCTV dan segera pergi
+                        <p class="mt-5">saat saya sedang keluar untuk beli, ada sekelompok pria yang menodongkan senjata ke pemilik warung, ternyata sistem CCTV mendeteksi senjata dengan cepat lalu pria tersebut melarikan diri
                         </p>
-                        <h4 class="text-truncate">annisa</h4>
+                        <h4 class="text-truncate">Annisa</h4>
                         <i>Karyawan</i>
                     </div>
                 </div>
                 <div class="text-center">
-                    <img class="img-fluid mx-auto rounded-circle" src="https://video-images.vice.com/articles/5c73788b92c47c0007725ed9/lede/1551165542931-IMG_4554.jpeg?crop=0.6667xw:1xh;0.1777xw,0xh" style="width: 100px; height: 100px;" >
+                    <img class="img-fluid mx-auto rounded-circle" src="img/testimonial-3.jpg" style="width: 100px; height: 100px;" >
                     <div class="testimonial-text bg-light rounded p-4 mt-n5">
-                        <p class="mt-5">Saya sedang menunggu orederan selanjutnya, tetapi ada sekelompok begal yang mengincar motor saya, tetapi mereka melihat CCTV ini dan mereka segera pergi
+                        <p class="mt-5">saat saya sedang menunggu orederan selanjutnya, ada sekelompok begal yang mengincar motor saya, tetapi mereka melihat CCTV ini yang menggunakan sistem deteksi senjata. mereka langsung melarikan diri
                         </p>
-                        <h4 class="text-truncate">yoyo wijatmoko</h4>
+                        <h4 class="text-truncate">Bambang</h4>
                         <i>Ojek Online</i>
                     </div>
                 </div>
@@ -355,7 +351,7 @@
                                 <span class="text-light px-2">|</span>
                                 <span class="text-light text-uppercase">Uji Coba setelah dipasarkan</span>
                             </div>
-                            <a class="h3 m-0 text-white" href="">banyak laporan dan korban yang selamat, serta menangkap pelaku</a>
+                            <a class="h3 m-0 text-white" href="">banyak laporan dan korban yang selamat, serta menangkap pelaku tindak kejahatan</a>
                         </div>
                     </div>
                 </div>
@@ -439,38 +435,63 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Toggle</title>
+</head>
+<body>
+
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-          let mediaDevices = navigator.mediaDevices;
-      
-          let video = document.getElementById("vid");
-          video.muted = true;
-         
-          let but = document.getElementById("but");
-          but.addEventListener("click", () => {
-            // Accessing the user camera and video.
-            mediaDevices.getUserMedia({
-              video: true,
-            }).then((stream) => {
-            // Changing the source of video to current stream.
-              video.srcObject = stream;
-              video.addEventListener("loadedmetadata", () => {
-                video.play();
-              });
-            }).catch(alert);
-          });
-      
-          const stopVideoButton = document.getElementById("stop");
-          stopVideoButton.addEventListener("click", () => {
-            mediaDevices.getUserMedia({
-              video: true,
-            }).then((stream) => {
-              video.srcObject = null;
-              stream.getVideoTracks()[0].stop();
+            let mediaDevices = navigator.mediaDevices;
+            let video = document.getElementById("vid");
+            video.muted = true;
+
+            let isCameraOn = false; // Variable to track camera status
+
+            let startButton = document.getElementById("but");
+            startButton.addEventListener("click", () => {
+                if (!isCameraOn) {
+                    // Accessing the user camera and video.
+                    mediaDevices.getUserMedia({ video: true })
+                        .then((stream) => {
+                            // Changing the source of video to current stream.
+                            video.srcObject = stream;
+                            video.addEventListener("loadedmetadata", () => {
+                                video.play();
+                            });
+                        })
+                        .catch(alert);
+
+                    isCameraOn = true;
+                    startButton.innerText = "Stop Camera";
+                } else {
+                    // Stop the camera
+                    video.srcObject = null;
+                    mediaDevices.getUserMedia({ video: true })
+                        .then((stream) => {
+                            stream.getVideoTracks()[0].stop();
+                        });
+
+                    isCameraOn = false;
+                    startButton.innerText = "Start Camera";
+                }
             });
-          });
-        });
-      </script>
+
+            const stopVideoButton = document.getElementById("stop");
+            stopVideoButton.addEventListener("click", () => {
+                mediaDevices.getUserMedia({ video: true })
+                    .then((stream) => {
+                        video.srcObject = null;
+                        stream.getVideoTracks()[0].stop();
+                    });
+            });
+        });
+    </script>
+
 </body>
 
 </html>
