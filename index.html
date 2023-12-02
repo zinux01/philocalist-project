@@ -7,6 +7,9 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Philocalist Project" name="keywords">
     <meta content="Philocalist Project" name="description">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Coach</title>
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -49,6 +52,46 @@
             object-fit: cover;
             border-radius: 10px; /* Gantilah dengan border-radius yang diinginkan */
         }
+
+        .rounded-photo {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .rounded-photo img {
+            width: 70%;
+            height: auto;
+            display: block;
+            border: 8px solid #ffffff; /* Warna dan ketebalan border disesuaikan */
+        }
+
+        .social-icons {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: #ffffff; /* Warna background disesuaikan */
+            padding: 5px;
+        }
+
+        .social-icons a {
+            margin: 2px;
+        }
+
+        .profile-info {
+            background-color: #007bff; /* Warna background disesuaikan */
+            text-align: center;
+            padding: 20px;
+            border-bottom-left-radius: 10px; /* Radius sudut border disesuaikan */
+            border-bottom-right-radius: 10px; /* Radius sudut border disesuaikan */
+        }
+
+        .profile-info h3,
+        .profile-info p {
+            margin: 0;
+            color: #ffffff; /* Warna teks disesuaikan */
+        }
+
+
         
     </style>
 </head>
@@ -87,7 +130,8 @@
                     <img class="w-100" src="img/carousel-1.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <img class="img-fluid rounded-top w-100 object-fit-cover" src="img/PHILOCHALIST LOGO_20231130154634.png">
+                            
+                            <img class="img-fluid rounded-top object-fit-cover animated bounceInDown" src="img/PHILOCHALIST LOGO_20231130154634.png" alt="" width="150">
                             <h5 class="text-white text-uppercase animated bounceInDown">Philocalist Project</h5>
                             <h1 class="display-1 text-white mb-md-4 animated zoomIn">Sensor Keamanan Pendeteksi Tindak Kejahatan</h1>
                         </div>
@@ -97,6 +141,7 @@
                     <img class="w-100" src="img/carousel-2.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
+                            <img class="img-fluid rounded-top object-fit-cover animated bounceInDown" src="img/PHILOCHALIST LOGO_20231130154634.png" alt="" width="150">
                             <h5 class="text-white text-uppercase animated bounceInDown">Philocalist Project</h5>
                             <h1 class="display-1 text-white mb-md-4 animated zoomIn">Sensor Keamanan Pendeteksi Tindak Kejahatan</h1>
                         </div>
@@ -106,7 +151,7 @@
                     <img class="w-100" src="img/carousel-3.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            
+                            <img class="img-fluid rounded-top object-fit-cover animated bounceInDown" src="img/PHILOCHALIST LOGO_20231130154634.png" alt="" width="150">
                             <h5 class="text-white text-uppercase animated bounceInDown">Philocalist Project</h5>
                             <h1 class="display-1 text-white mb-md-4 animated zoomIn">Sensor Keamanan Pendeteksi Tindak Kejahatan</h1>
                         </div>
@@ -261,7 +306,31 @@
     
     <!-- Team End -->
 
-
+    <!-- coach -->
+    <div class="container-fluid py-5 wow fadeInUp" id="members" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+                <h5 class="text-primary text-uppercase" style="letter-spacing: 5px;">Supervised by :</h5>
+            <div class="wow slideInUp" data-wow-delay="0.9s">
+                <div class="rounded-photo">
+                     <div class="position-relative rounded-top d-flex align-items-center justify-content-center">
+                    <img class="img-fluid object-fit-cover animated bounceInDown" src="img/ka angel.jpg" alt="">
+                    <div class="social-icons">
+                        <a class="btn btn-outline-secondary btn-square" href="https://www.linkedin.com/in/angelmetanosaa/">
+                            <i class="fab fa-linkedin-in fw-normal"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="profile-info">
+                    <h3 class="text-white">Angel Metanosa Afinda, S.Kom., M.Kom.</h3>
+                    <p class="text-white m-0">Orbit Future Academy</p>
+                    <p class="text-white m-0">(AI Coach)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--coach end-->
+                    
     <!-- Testimonial Start -->
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
