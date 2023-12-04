@@ -214,15 +214,8 @@
      <div class="container">
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
             <h5 class="text-primary text-uppercase" style="letter-spacing: 5px;">Trial our prototipe</h5>
-            <h1 class="display-5 mb-0">Camera</h1>
+                <button id="tombolKlik">Deteksi</button>
         </div>
-    <div class="d-flex flex-column align-items-center"> 
-        <div id="camera">
-            <video id="vid"></video>
-        </div>
-     <br />
-        <button id="but" autoplay id="stop"> Start WebCam</button>
-    </div>
     </div>
 
     <!-- Camera -->
@@ -508,59 +501,23 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Camera Toggle</title>
-</head>
-<body>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Camera Toggle</title>
+    </head>
+    <body>
+        <script>
+            let videoStream; // Untuk menyimpan stream video
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            let mediaDevices = navigator.mediaDevices;
-            let video = document.getElementById("vid");
-            video.muted = true;
+            // Mendapatkan referensi tombol
+            var tombol = document.getElementById("tombolKlik");
 
-            let isCameraOn = false; // Variable to track camera status
-
-            let startButton = document.getElementById("but");
-            startButton.addEventListener("click", () => {
-                if (!isCameraOn) {
-                    // Accessing the user camera and video.
-                    mediaDevices.getUserMedia({ video: true })
-                        .then((stream) => {
-                            // Changing the source of video to current stream.
-                            video.srcObject = stream;
-                            video.addEventListener("loadedmetadata", () => {
-                                video.play();
-                            });
-                        })
-                        .catch(alert);
-
-                    isCameraOn = true;
-                    startButton.innerText = "Stop Camera";
-                } else {
-                    // Stop the camera
-                    video.srcObject = null;
-                    mediaDevices.getUserMedia({ video: true })
-                        .then((stream) => {
-                            stream.getVideoTracks()[0].stop();
-                        });
-
-                    isCameraOn = false;
-                    startButton.innerText = "Start Camera";
-                }
-            });
-
-            const stopVideoButton = document.getElementById("stop");
-            stopVideoButton.addEventListener("click", () => {
-                mediaDevices.getUserMedia({ video: true })
-                    .then((stream) => {
-                        video.srcObject = null;
-                        stream.getVideoTracks()[0].stop();
-                    });
-            });
+            // Menambahkan event listener untuk menanggapi klik pada tombol
+            tombol.addEventListener("click", function() {
+            // Mengarahkan pengguna ke link yang ditentukan
+            window.location.href = "https://deteksi-nine.vercel.app/";
         });
     </script>
 
